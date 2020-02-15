@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-15T13:04:28.975Z</updated>
+  <updated>2020-02-15T13:41:29.078Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>【图解】随机采样 &amp; 相邻采样</title>
-    <link href="http://yoursite.com/2020/02/15/%E3%80%90%E5%9B%BE%E8%A7%A3%E3%80%91%E9%9A%8F%E6%9C%BA%E9%87%87%E6%A0%B7%20&amp;%20%E7%9B%B8%E9%82%BB%E9%87%87%E6%A0%B7/"/>
-    <id>http://yoursite.com/2020/02/15/%E3%80%90%E5%9B%BE%E8%A7%A3%E3%80%91%E9%9A%8F%E6%9C%BA%E9%87%87%E6%A0%B7%20&amp;%20%E7%9B%B8%E9%82%BB%E9%87%87%E6%A0%B7/</id>
-    <published>2020-02-15T12:42:05.238Z</published>
-    <updated>2020-02-15T13:04:28.975Z</updated>
+    <link href="http://yoursite.com/2020/02/15/sample2png/"/>
+    <id>http://yoursite.com/2020/02/15/sample2png/</id>
+    <published>2020-02-15T13:34:16.955Z</published>
+    <updated>2020-02-15T13:41:29.078Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="【图解】随机采样-amp-相邻采样"><a href="#【图解】随机采样-amp-相邻采样" class="headerlink" title="【图解】随机采样 &amp; 相邻采样"></a>【图解】随机采样 &amp; 相邻采样</h1><p>本系列主要针对深度学习过程中的零碎知识点整理与直观理解。</p><h2 id="先验知识："><a href="#先验知识：" class="headerlink" title="先验知识："></a>先验知识：</h2><p>采样序列总字符长度：$L$</p><p>批量大小（每个批量中的样本数）：<code>batch_size = n</code></p><p>每个样本包含的时间步：<code>num_step = t</code></p><p><strong>小批量采样</strong>：每次只处理一个批量的样本，每个字符最多只能出现在一个样本中。</p><p><strong><em>【重点】：</em></strong>随机和相邻均指相邻<strong>批量</strong>之间！</p><p>由序列总长与样本时间步可知样本数为：$N = \lfloor \frac{L}{t} \rfloor$ （向下取整，舍弃）</p><h2 id="图解"><a href="#图解" class="headerlink" title="图解"></a>图解</h2><p><img src="E:/Blog/source/_posts/sample1.png" alt="image 1"></p><p><img src="E:/Blog/source/_posts/sample2.png" alt="image 2"></p><p><img src="E:/Blog/source/_posts/sample3.png" alt="image 3"></p><h2 id="python实现"><a href="#python实现" class="headerlink" title="python实现"></a>python实现</h2><p><a href="https://seventeenchen.github.io/2020/02/15/sample/" target="_blank" rel="noopener">代码页面</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="【图解】随机采样-amp-相邻采样"><a href="#【图解】随机采样-amp-相邻采样" class="headerlink" title="【图解】随机采样 &amp; 相邻采样"></a>【图解】随机采样 &amp; 相邻采样</h1><p>本系列主要针对深度学习过程中的零碎知识点整理与直观理解。</p><h2 id="先验知识："><a href="#先验知识：" class="headerlink" title="先验知识："></a>先验知识：</h2><p>采样序列总字符长度：$L$</p><p>批量大小（每个批量中的样本数）：<code>batch_size = n</code></p><p>每个样本包含的时间步：<code>num_step = t</code></p><p><strong>小批量采样</strong>：每次只处理一个批量的样本，每个字符最多只能出现在一个样本中。</p><p><strong><em>【重点】：</em></strong>随机和相邻均指相邻<strong>批量</strong>之间！</p><p>由序列总长与样本时间步可知样本数为：$N = \lfloor \frac{L}{t} \rfloor$ （向下取整，舍弃）</p><h2 id="图解"><a href="#图解" class="headerlink" title="图解"></a>图解</h2><p><img src="sample1.png" alt="image 1"></p><p><img src="sample2.png" alt="image 2"></p><p><img src="sample3.png" alt="image 3"></p><h2 id="python实现"><a href="#python实现" class="headerlink" title="python实现"></a>python实现</h2><p><a href="https://seventeenchen.github.io/2020/02/15/sample/" target="_blank" rel="noopener">代码页面</a></p>]]></content>
     
     <summary type="html">
     
@@ -38,6 +38,8 @@
       <category term="图解深度学习" scheme="http://yoursite.com/categories/%E5%9B%BE%E8%A7%A3%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
+      <category term="图解" scheme="http://yoursite.com/tags/%E5%9B%BE%E8%A7%A3/"/>
+    
       <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="序列采样" scheme="http://yoursite.com/tags/%E5%BA%8F%E5%88%97%E9%87%87%E6%A0%B7/"/>
@@ -47,8 +49,6 @@
       <category term="相邻采样" scheme="http://yoursite.com/tags/%E7%9B%B8%E9%82%BB%E9%87%87%E6%A0%B7/"/>
     
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-      <category term="图解" scheme="http://yoursite.com/tags/%E5%9B%BE%E8%A7%A3/"/>
     
   </entry>
   
@@ -203,8 +203,6 @@
     
       <category term="pytorch" scheme="http://yoursite.com/tags/pytorch/"/>
     
-      <category term="jupyter notebook" scheme="http://yoursite.com/tags/jupyter-notebook/"/>
-    
       <category term="多层感知机" scheme="http://yoursite.com/tags/%E5%A4%9A%E5%B1%82%E6%84%9F%E7%9F%A5%E6%9C%BA/"/>
     
       <category term="隐藏层" scheme="http://yoursite.com/tags/%E9%9A%90%E8%97%8F%E5%B1%82/"/>
@@ -214,6 +212,8 @@
       <category term="梯度" scheme="http://yoursite.com/tags/%E6%A2%AF%E5%BA%A6/"/>
     
       <category term="反向传播" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/"/>
+    
+      <category term="jupyter notebook" scheme="http://yoursite.com/tags/jupyter-notebook/"/>
     
   </entry>
   
@@ -249,6 +249,8 @@
     
       <category term="pytorch" scheme="http://yoursite.com/tags/pytorch/"/>
     
+      <category term="jupyter notebook" scheme="http://yoursite.com/tags/jupyter-notebook/"/>
+    
       <category term="softmax" scheme="http://yoursite.com/tags/softmax/"/>
     
       <category term="分类问题" scheme="http://yoursite.com/tags/%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/"/>
@@ -258,8 +260,6 @@
       <category term="数据集的下载与读取" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E4%B8%8B%E8%BD%BD%E4%B8%8E%E8%AF%BB%E5%8F%96/"/>
     
       <category term="多维tensor的操作" scheme="http://yoursite.com/tags/%E5%A4%9A%E7%BB%B4tensor%E7%9A%84%E6%93%8D%E4%BD%9C/"/>
-    
-      <category term="jupyter notebook" scheme="http://yoursite.com/tags/jupyter-notebook/"/>
     
   </entry>
   
